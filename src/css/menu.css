@@ -1,0 +1,65 @@
+
+.menu{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  #f28b66 0%,  #ffd68a 90% );
+    padding: 10px;
+    color: white;
+}
+
+.menu ul{
+     display: flex;
+     justify-content: space-evenly;
+     font-size: 26px;
+     font-weight: bold;
+     list-style: none;
+}
+
+nav.shift ul li a {
+    position:relative;
+    z-index: 1;
+    text-align: center;
+  }
+  nav.shift ul li a:hover {
+    color: radial-gradient( circle farthest-corner at 10% 20%,  #f28b66 0%,  #ffd68a 90% );
+    background: radial-gradient( circle farthest-corner at 10% 20%,  #f28b66 0%,  #e7b353 90% );
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+  nav.shift ul li a:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 1px;
+    content: '.';
+    color: transparent;
+    background: rgba(255, 255, 255, 0.646);
+    visibility: none;
+    opacity: 0;
+    z-index: -1;
+  }
+  nav.shift ul li a:hover:after {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+  }
+  
+  nav ul li a {
+    padding: 8px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  nav ul li a,
+  nav ul li a:after,
+  nav ul li a:before {
+    transition: all .7s;
+  }
+
+  
+
+
+  
