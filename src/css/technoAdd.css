@@ -1,0 +1,60 @@
+.technoAdd{
+    background: radial-gradient( circle farthest-corner at 10% 20%,  #f28b66 0%,  #ffd68a 90% );
+    padding: 30px;
+    width: 50%;
+    display: block;
+    margin: auto;
+    color: white;
+    border-radius: 7px;
+}
+
+.technoAdd h1, form{
+    text-align: center;
+}
+.technoAdd h1{
+    margin-bottom: 30px!important;
+}
+
+.technoAdd label{
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+#technoName{
+    border: none;
+    background: white;
+    border-radius: 3px;
+    padding: 3px 0;
+}
+
+.technoAdd select{
+    text-decoration: none;
+    border: none;
+    padding: 3px 0;
+    border-radius: 3px;
+    margin-top: 15px;
+}
+
+.technoAdd .btn input{
+    text-decoration: none;
+    border: none;
+    background: none;
+    color: radial-gradient( circle farthest-corner at 10% 20%,  #f28b66 0%,  #ffd68a 90% );
+    background: radial-gradient( circle farthest-corner at 10% 20%,  #f28b66 0%,  #ffd68a 90% );
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.btn{
+    margin-top: 10px!important;
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    padding: 3px 0;
+    border-radius: 3px;
+    display: block;
+    margin: auto;
+    margin-top: 30px!important;
+
+}
