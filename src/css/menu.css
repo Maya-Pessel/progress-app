@@ -3,6 +3,7 @@
     background-image: radial-gradient( circle farthest-corner at 10% 20%,  #f28b66 0%,  #ffd68a 90% );
     padding: 10px;
     color: white;
+    margin-bottom: 50px;
 }
 
 .menu ul{
@@ -19,7 +20,6 @@ nav.shift ul li a {
     text-align: center;
   }
   nav.shift ul li a:hover {
-    color: radial-gradient( circle farthest-corner at 10% 20%,  #f28b66 0%,  #ffd68a 90% );
     background: radial-gradient( circle farthest-corner at 10% 20%,  #f28b66 0%,  #e7b353 90% );
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -40,6 +40,7 @@ nav.shift ul li a {
     visibility: none;
     opacity: 0;
     z-index: -1;
+    border-radius: 3px;
   }
   nav.shift ul li a:hover:after {
     opacity: 1;
@@ -57,4 +58,17 @@ nav.shift ul li a {
   nav ul li a:after,
   nav ul li a:before {
     transition: all .7s;
+  }
+
+  .activeLink a{
+    background: radial-gradient( circle farthest-corner at 10% 20%,  #f28b66 0%,  #e7b353 90% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+  }
+
+  .activeLink span {
+    background: #FEF2EC;
+    border-radius: 3px;
+    padding: 8px 0;
   }

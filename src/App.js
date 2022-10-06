@@ -1,3 +1,6 @@
+
+import { Route, Routes } from 'react-router-dom';
+
 import Menu from './components/menu';
 import './css/app.css';
 import Home from './pages/home';
@@ -8,9 +11,12 @@ function App() {
   return (
     <>
       <Menu></Menu>
-      <Home></Home>
-      <TechnoAdd/>
-      <TechnoList/>
+      <Routes>
+        <Route path="/" element={ <Home />} />
+        <Route path="/add" element={ <TechnoAdd />} />
+        <Route path="/list" element={ <TechnoList />} />
+      </Routes>
+
     </>
   );
 }
