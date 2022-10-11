@@ -1,7 +1,7 @@
 .technoAdd{
     background: radial-gradient( circle farthest-corner at 10% 20%,  #f28b66 0%,  #ffd68a 90% );
     padding: 30px;
-    width: 50%;
+    width: 30%;
     display: block;
     margin: auto;
     color: white;
@@ -21,11 +21,23 @@
     font-size: 16px;
 }
 
-#technoName{
+.form{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+
+#technoName, #technoDesc{
     border: none;
     background: white;
     border-radius: 3px;
     padding: 3px 0;
+    margin-top: 5px;
 }
 
 .technoAdd select{
@@ -33,7 +45,7 @@
     border: none;
     padding: 3px 0;
     border-radius: 3px;
-    margin-top: 15px;
+    margin-top: 5px;
 }
 
 .technoAdd .btn input{

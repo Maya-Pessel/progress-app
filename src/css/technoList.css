@@ -1,3 +1,22 @@
-.technoList{
-    background-color: aquamarine;
+
+.technoList h1{
+    text-align: center;
+    background: radial-gradient( circle farthest-corner at 10% 20%,  #f28b66 0%,  #ffd68a 90% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.technos{
+    background: radial-gradient( circle farthest-corner at 10% 20%,  #f28b66 0%,  #ffd68a 90% );
+    width: 30%;
+    display: block;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 7px;
+}
+
+.technos h2, .technos p{
+   color: #fff8ed;
+   text-align: center;
 }
