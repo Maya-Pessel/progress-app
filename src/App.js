@@ -35,8 +35,6 @@ function App() {
   function handleAddTechno(techno) {
     console.log('handleAddTechno', technos);
     setTechnos([...technos, {...techno, technoId: uuidv4()}]);
-    alert("Techno added");
-
     
   }
   // Supprimer une techno
