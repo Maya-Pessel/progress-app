@@ -20,3 +20,25 @@
    color: #fff8ed;
    text-align: center;
 }
+
+.technoDelete{
+    text-align: end;
+}
+
+.btn-delete{    
+    background: #f37676;
+    border: none;
+    border-radius: 3px;
+    color: #fff8ed;
+    padding: 4px 8px;
+    font-weight: bold;
+    /* transistion smooth */
+    transition: all 0.2s ease-in-out;
+
+}
+
+.btn-delete:hover{    
+    background: #f35c5c;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}

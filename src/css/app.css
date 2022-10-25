@@ -1,7 +1,7 @@
 @import "home.css";
 @import "menu.css";
 @import "technoAdd.css";
-@import "technoList.css";
+@import "technoItem.css";
 
 body{
     background-color: #fff8ed;
