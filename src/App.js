@@ -17,18 +17,23 @@ function App() {
   // HOOKS
   const[technos, setTechnos] = useState([]);
   const STORAGE_KEY = "technos";
+  // eslint-disable-next-line
   const [storedTechnos, setStoredTechnos] = useLocalStorage(STORAGE_KEY, []);
 
 
   // Enregistrer les technos dans le local storage
   useEffect(() => {
     console.log("useEffect");
+    // eslint-disable-next-line
     setTechnos(storedTechnos);
-  }, []);
+    // eslint-disable-next-line
+  }, [setTechnos]);
 
   useEffect(() => {
     console.log("useEffect");
+    // eslint-disable-next-line
     setStoredTechnos(technos)
+    // eslint-disable-next-line
   }, [technos]);
 
   // Ajouter unz techno
