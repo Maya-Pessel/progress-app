@@ -1,5 +1,8 @@
 import { useState } from "react";
+import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
 
+import 'react-toastify/dist/ReactToastify.css';
 export default function TechnoAdd(props) {
     const [techno, setTechno] = useState({
         technoName: '',
@@ -8,7 +11,10 @@ export default function TechnoAdd(props) {
     });
 
     const {handleAddTechno} = props;
-    
+
+    // Alerte de succès
+    const notify = () => toast.success("Techno added!");
+
 
     function handleSubmit(evt) {
         evt.preventDefault();
@@ -41,9 +47,9 @@ export default function TechnoAdd(props) {
                         <label htmlFor="technoDesc">Description</label>
                         <input type="text" name="technoDesc" id="technoDesc" value={techno.technoDesc} onChange={(evt)=>handleChange(evt)}/>
                     </div>
-
+                    <ToastContainer />
                     <div className="btn">
-                        <input type="submit" value="Add techno"/>
+                        <input type="submit" onClick={notify} value="Add techno"/>
                     </div>
                 </form>
             </div>
